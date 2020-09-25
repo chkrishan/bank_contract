@@ -6,21 +6,69 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="">
+    <style>
+        body {
+            background-image: linear-gradient( to right, #be5683, #ffe4e4, #848ccf, #93b5e1);
+        }
+        
+        .card {
+            background-color: #ffe4e4;
+            margin: 10% auto;
+            box-shadow: 0 2px 3px #ccc;
+        }
+        
+        .btn-outline-primary {
+            margin-left: 20px;
+        }
+        
+        .text {
+            display: inline;
+        }
+        
+        .form-control {
+            margin-top: 15px;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <h1>ETHEREUM SMART CONTRACT testing on Goerli test network</h1>
-    <input type="text" id="amount"><br>
-    <p>Final Balance :
-        <h3 id="balance"> </h3>
-    </p>
+    <div class="card" style="width: 18rem;">
 
-    <button id="deposit">Deposit</button>
-    <button id="withdraw">Withdraw</button>
+        <div class="card-body">
+            <h5 class="card-title">ETHEREUM SMART CONTRACT <span>(@Krishan)</span></h5>
+            <p class="card-text">Goerli test network</p>
+            <p class="text">Final Balance : </p>
+            <h4 class="text" id="balance" style="color:green;"> </h4>
+
+            <input type="text" class="form-control" id="amount" placeholder="enter amount"><br>
+            <button class="btn btn-outline-success  " id="deposit">Deposit</button>
+            <button class="btn btn-outline-primary " id="withdraw">Withdraw</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- <div class="container">
+        <h1>ETHEREUM SMART CONTRACT </h1>
+        <h3>Goerli test network</h3>
+        <input type="text" id="amount"><br>
+        <p>Final Balance :
+            <h3 id="balance"> </h3>
+        </p>
+
+        <button id="deposit">Deposit</button>
+        <button id="withdraw">Withdraw</button>
+    </div>
+
     <hr>
-    <h2>@Krishan</h2>
+    <h2>@Krishan</h2> -->
 
 
     <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"></script>
